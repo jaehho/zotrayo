@@ -4,8 +4,8 @@ set -euo pipefail
 rm -rf build
 mkdir build
 
-cd src-2.0
-zip -r ../build/make-it-red-2.0.xpi *
+cd src
+zip -r ../build/zotrayo.xpi *
 cd ../build
 
-jq ".addons[\"make-it-red@example.com\"].updates[0].update_hash = \"sha256:`shasum -a 256 make-it-red-2.0.xpi | cut -d' ' -f1`\"" ../updates-2.0.json.tmpl > updates-2.0.json
+jq ".addons[\"zotrayo@jaehho.com\"].updates[0].update_hash = \"sha256:`shasum -a 256 zotrayo.xpi | cut -d' ' -f1`\"" ../updates.json.tmpl > updates.json

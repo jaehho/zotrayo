@@ -1,18 +1,18 @@
 var MakeItRed;
 
 function log(msg) {
-	Zotero.debug("Make It Red: " + msg);
+	Zotero.debug("Zotrayo log: " + msg);
 }
 
 function install() {
-	log("Installed 2.0");
+	log("Installed Zotrayo");
 }
 
 async function startup({ id, version, rootURI }) {
-	log("Starting 2.0");
+	log("Starting Zotrayo");
 	
 	Zotero.PreferencePanes.register({
-		pluginID: 'make-it-red@example.com',
+		pluginID: 'zotrayo@jaehho.com',
 		src: rootURI + 'preferences.xhtml',
 		scripts: [rootURI + 'preferences.js']
 	});
@@ -32,11 +32,11 @@ function onMainWindowUnload({ window }) {
 }
 
 function shutdown() {
-	log("Shutting down 2.0");
+	log("Shutting down Zotrayo");
 	MakeItRed.removeFromAllWindows();
 	MakeItRed = undefined;
 }
 
 function uninstall() {
-	log("Uninstalled 2.0");
+	log("Uninstalled Zotrayo");
 }

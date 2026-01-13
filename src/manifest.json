@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Zotrayo",
+	"version": "1.0",
+	"description": "Minimizes Zotero to the system tray.",
+	"homepage_url": "https://github.com/jaehho/zotrayo",
+	"applications": {
+		"zotero": {
+			"id": "zotrayo@jaehho.com",
+			"update_url": "https://github.com/jaehho/zotrayo/raw/refs/heads/main/build/updates.json",
+			"strict_min_version": "7.0",
+			"strict_max_version": "7.1.*"
+		}
+	}
+}
