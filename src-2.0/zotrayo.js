@@ -18,7 +18,14 @@ ZoteroTray = {
 	},
 	
 	addToWindow(window) {
-		this.log("Adding to window: " + window.location.href);
+		let doc = window.document;
+		
+		// Log window information for verification
+		this.log("Window title: " + doc.title);
+		this.log("Window location: " + window.location.href);
+		this.log("Listener installed on main window");
+		
+		// TODO: Add close event listener in Step 2
 	},
 	
 	addToAllWindows() {

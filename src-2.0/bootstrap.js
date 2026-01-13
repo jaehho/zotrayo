@@ -13,6 +13,7 @@ async function startup({ id, version, rootURI }) {
 	
 	Services.scriptloader.loadSubScript(rootURI + 'zotrayo.js');
 	ZoteroTray.init({ id, version, rootURI });
+	ZoteroTray.addToAllWindows();
 	await ZoteroTray.main();
 }
 

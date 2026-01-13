@@ -1,11 +1,11 @@
 {
   "addons": {
-    "make-it-red@example.com": {
+    "zotrayo@example.com": {
       "updates": [
         {
-          "version": "2.0",
-          "update_link": "https://github.com/jaehho/zotrayo/raw/refs/heads/main/build/make-it-red-2.0.xpi",
-          "update_hash": "sha256:d2faf017eca589b7c44dfcfc1bd9bec6da573feb2c35f8eb2a06038e87561776",
+          "version": "0.1.0",
+          "update_link": "https://zotero-download.s3.amazonaws.com/tmp/zotrayo/zotrayo-2.0.xpi",
+          "update_hash": "sha256:5f7bf41b80b69ceacd73ea0ece34fa6cda4a0cb243bf75a1f4e0daa49327bb3d",
           "applications": {
             "zotero": {
               "strict_min_version": "7.0"
