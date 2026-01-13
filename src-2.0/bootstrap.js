@@ -1,42 +1,35 @@
-var MakeItRed;
+var ZoteroTray;
 
 function log(msg) {
-	Zotero.debug("Make It Red: " + msg);
+	Zotero.debug("ZoteroTray: " + msg);
 }
 
 function install() {
-	log("Installed 2.0");
+	log("Installed 0.1.0");
 }
 
 async function startup({ id, version, rootURI }) {
-	log("Starting 2.0");
+	log("Starting up");
 	
-	Zotero.PreferencePanes.register({
-		pluginID: 'make-it-red@example.com',
-		src: rootURI + 'preferences.xhtml',
-		scripts: [rootURI + 'preferences.js']
-	});
-	
-	Services.scriptloader.loadSubScript(rootURI + 'make-it-red.js');
-	MakeItRed.init({ id, version, rootURI });
-	MakeItRed.addToAllWindows();
-	await MakeItRed.main();
+	Services.scriptloader.loadSubScript(rootURI + 'zotrayo.js');
+	ZoteroTray.init({ id, version, rootURI });
+	await ZoteroTray.main();
 }
 
 function onMainWindowLoad({ window }) {
-	MakeItRed.addToWindow(window);
+	ZoteroTray.addToWindow(window);
 }
 
 function onMainWindowUnload({ window }) {
-	MakeItRed.removeFromWindow(window);
+	ZoteroTray.removeFromWindow(window);
 }
 
 function shutdown() {
-	log("Shutting down 2.0");
-	MakeItRed.removeFromAllWindows();
-	MakeItRed = undefined;
+	log("Shutting down");
+	ZoteroTray.removeFromAllWindows();
+	ZoteroTray = undefined;
 }
 
 function uninstall() {
-	log("Uninstalled 2.0");
+	log("Uninstalled");
 }

@@ -1,13 +1,13 @@
 {
 	"manifest_version": 2,
-	"name": "Make It Red",
-	"version": "2.0",
-	"description": "Makes everything red",
-	"homepage_url": "https://github.com/zotero/make-it-red",
+	"name": "ZoteroTray",
+	"version": "0.1.0",
+	"description": "Minimize Zotero to system tray with native Windows helper",
+	"homepage_url": "https://github.com/jaehho/zotrayo",
 	"applications": {
 		"zotero": {
-			"id": "make-it-red@example.com",
-			"update_url": "https://raw.githubusercontent.com/jaehho/zotrayo/refs/heads/main/build/updates-2.0.json",
+			"id": "zotrayo@example.com",
+			"update_url": "https://zotero-download.s3.amazonaws.com/tmp/zotrayo/updates-2.0.json",
 			"strict_min_version": "7.0",
 			"strict_max_version": "7.1.*"
 		}

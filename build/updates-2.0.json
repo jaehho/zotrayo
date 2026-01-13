@@ -5,7 +5,7 @@
         {
           "version": "2.0",
           "update_link": "https://github.com/jaehho/zotrayo/raw/refs/heads/main/build/make-it-red-2.0.xpi",
-          "update_hash": "sha256:38964721db6d9f5293e0681ec71511597501f9888221a4c4526f6ab15cdb11ed",
+          "update_hash": "sha256:d2faf017eca589b7c44dfcfc1bd9bec6da573feb2c35f8eb2a06038e87561776",
           "applications": {
             "zotero": {
               "strict_min_version": "7.0"
